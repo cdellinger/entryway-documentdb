@@ -1,6 +1,6 @@
 {
   "name": "entryway-documentdb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Entryway provider for entryway, a persistence layer for user authentication data",
   "main": "./lib/index.js",
   "scripts": {
