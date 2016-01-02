@@ -14,13 +14,13 @@
   "license": "Apache-2.0",
   "dependencies": {
     "bcryptjs": "^2.2.0",
-    "documentdb": "^1.4.0",
+    "documentdb": "^1.5.0",
     "uuid": "^2.0.1"
   },
   "devDependencies": {
     "conventional-changelog": "^0.5.2",
     "conventional-github-releaser": "^0.5.0",
-    "entryway": "0.0.5",
+    "entryway": "0.0.6",
     "gulp": "^3.9.0",
     "gulp-bump": "^1.0.0",
     "gulp-conventional-changelog": "^0.7.0",
