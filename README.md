@@ -22,15 +22,26 @@ You must provide four configuration values as environmental variables in order f
 	ENTRYWAY_DOCUMENTDB_COLLECTION
 	ENTRYWAY_DOCUMENTDB_MASTER_KEY
 
-###ENTRYWAY_DOCUMENTDB_HOST_URL
+#####ENTRYWAY_DOCUMENTDB_HOST_URL
 This is the https endpoint provided by Azure when you set up your DocumentDB account.  It will be something similar to the following:
 	https://YOUR_HOST_NAME.documents.azure.com:443/
 
-###ENTRYWAY_DOCUMENTDB_DB
+#####ENTRYWAY_DOCUMENTDB_DB
 This is the database name that you create when you set up your account.
 
-###ENTRYWAY_DOCUMENTDB_COLLECTION
+#####ENTRYWAY_DOCUMENTDB_COLLECTION
 This is the name of the collection you create within the database from above where you want Entryway to persist its data.
 
-###ENTRYWAY_DOCUMENTDB_MASTER_KEY
+#####ENTRYWAY_DOCUMENTDB_MASTER_KEY
 This is the value of the Primary Key that is created when you create your DocumentDB database.
+
+###Code Examples
+There is not any code that is specific to this particular module in order to support DocumentDB.  All you need to do is pass a provider object based upon this module into Entryway as shown below.
+
+	var UserSchema = require('entryway');
+	var provider = require('entryway-documentdb');
+	var user = new UserSchema(provider);
+	...
+
+
+Beyond that all the interaction with Entryway is exactly the same as with other Entryway providers, examples which can be seen [here](https://github.com/cdellinger/entryway).
